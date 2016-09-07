@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+     <item android:state_enabled="false"  > <!-- pressed -->
+        
+        <shape android:shape="rectangle">
+            <corners android:bottomRightRadius="40dp" android:topRightRadius="40dp" />
+            <gradient  android:endColor="@color/list_divider" android:startColor="@color/list_divider" />
+        </shape></item>
+        
+
+    <item android:state_pressed="true"  > <!-- pressed -->
+        
+        <shape android:shape="rectangle">
+            <corners android:bottomRightRadius="40dp" android:topRightRadius="40dp" />
+            <gradient  android:endColor="@color/btn_selected" android:startColor="@color/btn_selected" />
+        </shape></item>
+        
+    <item>
+       <shape android:shape="rectangle">
+            <corners android:bottomRightRadius="40dp" android:topRightRadius="40dp" />
+
+            <gradient android:endColor="@color/btn_normal" android:startColor="@color/btn_normal" ></gradient>
+        </shape></item> <!-- default -->
+
+</selector>

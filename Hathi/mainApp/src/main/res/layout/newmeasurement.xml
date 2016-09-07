@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <widgets.MyActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/divide_color" >
+    </LinearLayout>
+
+    <!--<include
+        android:id="@+id/step1_navigation_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="2dp"
+        layout="@layout/navigation_bar" />
+-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/divide_color" >
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TableLayout
+                android:id="@+id/tableLayout11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:stretchColumns="4"
+                android:layout_weight="1.05">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" >
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fabutton_pulseOx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pneu_newmeasurement_pulseox"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:src="@drawable/pulseox"
+                        android:layout_gravity="bottom|left|right" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="7dp"
+                        android:text="@string/pneu_newmeasurement_pulseox"
+                        android:textSize="@dimen/fairlybig_font"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fabutton_RR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|left|end"
+                        android:text="@string/pneu_newmeasurement_respirate"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:src="@drawable/alert" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="@string/pneu_newmeasurement_respirate"
+                        android:textSize="@dimen/fairlybig_font"
+                        android:layout_column="1"
+                        android:gravity="center|bottom"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_vertical|left" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" >
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fabutton_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|left|end"
+                        android:text="@string/pneu_newmeasurement_temperature"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:src="@drawable/alert" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="@string/pneu_newmeasurement_temperature"
+                        android:textSize="@dimen/fairlybig_font"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical|left" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" >
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fabutton_digiSteth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|left|end"
+                        android:text="@string/pneu_newmeasurement_digiSteth"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:src="@drawable/digisteth" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="@string/pneu_newmeasurement_digiSteth"
+                        android:textSize="@dimen/fairlybig_font"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical|left" />
+                </TableRow>
+            </TableLayout>
+
+
+
+
+
+
+
+            <!--<Button
+                android:id="@+id/button_newmeasurement"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_states"
+                android:gravity="center"
+                android:text="@string/pneu_mainmenu_button_newmeasurement"
+                android:textColor="@color/white"
+                android:textSize="@dimen/big_font"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_hospiresults"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_states"
+                android:gravity="center"
+                android:text="@string/pneu_mainmenu_button_hospiResults"
+                android:textColor="@color/white"
+                android:textSize="@dimen/big_font"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_prevvisit"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_states"
+                android:gravity="center"
+                android:text="@string/pneu_mainmenu_button_prevVisits"
+                android:textColor="@color/white"
+                android:textSize="@dimen/big_font"
+                android:textStyle="bold"/>-->
+
+          <!--  <Button
+                android:id="@+id/button_plisting"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_states"
+                android:gravity="center"
+                android:text="@string/cvd_mainmenu_button_plisting"
+                android:textColor="@color/white"
+                android:textSize="@dimen/big_font"
+                android:textStyle="bold" />-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/footer_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="23dp"
+        android:layout_margin="20dp"
+        layout="@layout/footerbar" />
+
+</LinearLayout>

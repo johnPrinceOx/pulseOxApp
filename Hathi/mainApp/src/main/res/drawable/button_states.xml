@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true"  > <!-- presses -->
+       <shape android:shape="rectangle">
+            <corners android:radius="30dp" />
+            <gradient android:endColor="@color/DeepSkyBlue" android:startColor="@color/DeepSkyBlue" />
+        </shape></item>
+  
+     <item android:state_pressed="true"  > <!-- presses -->
+       <shape android:shape="rectangle">
+            <corners android:radius="30dp" />
+            <gradient android:endColor="@color/DeepSkyBlue" android:startColor="@color/DeepSkyBlue"/>
+        </shape></item>
+  
+     <item android:state_selected="false"  > <!-- presses -->
+       <shape android:shape="rectangle">
+            <corners android:radius="30dp" />
+            <gradient android:endColor="@color/MediumTurquoise" android:startColor="@color/MediumTurquoise" />
+        </shape></item>
+        <!-- default -->
+        <item> 
+        <shape android:shape="rectangle">
+            <corners android:radius="30dp" />
+
+            <gradient android:endColor="@color/MediumTurquoise" android:startColor="@color/MediumTurquoise" />
+        </shape></item>
+
+</selector>

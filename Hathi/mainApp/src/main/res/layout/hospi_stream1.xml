@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <widgets.MyActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/divide_color" >
+    </LinearLayout>
+
+    <!--<include
+        android:id="@+id/step1_navigation_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="2dp"
+        layout="@layout/navigation_bar" />
+-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/divide_color" >
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button_newmeasurement"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_states"
+                android:gravity="center"
+                android:text="@string/pneu_mainmenu_button_newmeasurement"
+                android:textColor="@color/white"
+                android:textSize="@dimen/big_font"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_hospiresults"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_states"
+                android:gravity="center"
+                android:text="@string/pneu_mainmenu_button_hospiResults"
+                android:textColor="@color/white"
+                android:textSize="@dimen/big_font"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/button_prevvisit"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_states"
+                android:gravity="center"
+                android:text="@string/pneu_mainmenu_button_prevVisits"
+                android:textColor="@color/white"
+                android:textSize="@dimen/big_font"
+                android:textStyle="bold"/>
+
+          <!--  <Button
+                android:id="@+id/button_plisting"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_states"
+                android:gravity="center"
+                android:text="@string/cvd_mainmenu_button_plisting"
+                android:textColor="@color/white"
+                android:textSize="@dimen/big_font"
+                android:textStyle="bold" />-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/footer_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        layout="@layout/footerbar" />
+
+</LinearLayout>

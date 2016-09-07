@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <widgets.MyActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/divide_color" >
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="#ffffff">
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:stretchColumns="3" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        style="@style/question_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Question_patientID" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/EditText_patientID"
+                        style="@style/answer_style"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:inputType="number"
+                        android:maxLines="1" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/consent_row"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        style="@style/question_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Question_consentform" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/EditText_consentform"
+                        style="@style/answer_style"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:maxLines="1" >
+                    </EditText>
+
+                    <!--<ImageView
+                        android:id="@+id/infoBtn_consentNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/infobutton_mini"
+                        android:visibility="invisible" />-->
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        style="@style/question_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/GivenName" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/EditText_firstName"
+                        style="@style/answer_style"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textNoSuggestions"
+                        android:maxLines="1" >
+                    </EditText>
+                </TableRow>
+                <!-- android:inputType="textPersonName | textNoSuggestions" -->
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        style="@style/question_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/SurName" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/EditText_LastName"
+                        style="@style/answer_style"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textNoSuggestions"
+                        android:maxLines="1" >
+                    </EditText>
+                    <!-- android:inputType="textPersonName" -->
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        style="@style/question_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contactNum" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/EditText_ContactNum"
+                        style="@style/answer_style"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:maxLines="1" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contactNum"
+                        android:textSize="@dimen/medium_font"
+                        android:textStyle="bold"
+                        android:visibility="invisible" >
+                    </TextView>
+
+                    <CheckBox
+                        android:id="@+id/chk_phone"
+                        style="@style/answer_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="@string/unsure_phone_shared" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        style="@style/question_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/EditText_Address"
+                        style="@style/answer_style"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textNoSuggestions"
+                        android:maxLines="2" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Question_Village"
+                        android:textSize="@dimen/medium_font"
+                        android:textStyle="bold"
+                        android:visibility="gone" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/village_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawSelectorOnTop="true" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        style="@style/question_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Question_Gender_withacolon" />
+
+                    <RadioGroup
+                        android:id="@+id/radioSex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radio_yes"
+                            style="@style/answer_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radio_male" />
+
+                        <RadioButton
+                            android:id="@+id/radio_no"
+                            style="@style/answer_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="@string/radio_female" />
+                    </RadioGroup>
+                </TableRow>
+
+                <!-- android:text="@string/Approxmate_Age" -->
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        style="@style/question_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DOBdate_select" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/DOBcalendar_drawing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/calendar_64px" />
+
+                        <TextView
+                            android:id="@+id/showMyDate"
+                            style="@style/answer_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp" />
+                    </LinearLayout>
+
+                    <!--<ImageView
+                        android:id="@+id/pickApproxAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/infobutton_mini" />-->
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+                    <TextView
+                        style="@style/question_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Question_Age" />
+
+                    <EditText
+                        android:id="@+id/EditText_Age_fromDob"
+                        style="@style/answer_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="3"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:maxLines="1" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Question_Age"
+                        android:textSize="@dimen/medium_font"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <CheckBox
+                        android:id="@+id/chk_ddmm"
+                        style="@style/answer_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/unsure_DOB" />
+                </TableRow>
+
+                <!--<TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+                    <TextView
+                        style="@style/question_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aadhar_card" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/aadhar"
+                            style="@style/answer_style"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:ems="3"
+                            android:gravity="left"
+                            android:maxLength="12"
+                            android:inputType="number"
+                            android:maxLines="1" >
+                        </EditText>
+
+                        <CheckBox
+                            android:id="@+id/aadhar_notavailable"
+                            style="@style/answer_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/aadhar_card_no_unknown" />
+                    </LinearLayout>
+                </TableRow>-->
+
+                <TableRow
+                    android:id="@+id/chk_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/btn_edit"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/button_states"
+                        android:text="@string/footer_btn_edit"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/terms"
+                        style="@style/answer_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:gravity="center"
+                        android:text="@string/terms" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="31dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_weight="0.03">
+
+        <include
+            android:id="@+id/footer_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            layout="@layout/footerbar" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"  > <!-- pressed -->
+        
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="40dp" android:topLeftRadius="40dp" />
+            <gradient  android:endColor="@color/btn_selected" android:startColor="@color/btn_selected" />
+        </shape></item>
+        
+    <item>
+       <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="40dp" android:topLeftRadius="40dp" />
+
+            <gradient android:endColor="@color/risk_high" android:startColor="@color/risk_high" ></gradient>
+        </shape></item> <!-- default -->
+
+</selector>
