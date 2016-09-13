@@ -29,6 +29,7 @@ import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
@@ -41,6 +42,7 @@ public class LoginScreen extends CVDVariables implements OnClickListener {
 	// private PopupWindow pw;
 	private Button tv_asha = null;
 	private Button tv_doctor = null;
+	private ImageButton back;
 
 	private Button button_go = null;
 
@@ -87,6 +89,16 @@ public class LoginScreen extends CVDVariables implements OnClickListener {
 		*//* add event to logger *//*
 		appLogger.LogEvent(EventType.ACTIVITY_STARTED, "LoginScreen", "");
 */
+
+		back = (ImageButton) findViewById(R.id.infoButton);
+
+		back.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				startActivity(new Intent(LoginScreen.this, vietnam_info.class));
+				finish();
+			}
+		});
 	}
 
 	private void initializeButtonListeners() {
@@ -109,6 +121,7 @@ public class LoginScreen extends CVDVariables implements OnClickListener {
 		 */
 
 		lang_setting = (Button) findViewById(R.id.lang_setting);
+
 
 		button_go = (Button) findViewById(R.id.delgo_button);
 

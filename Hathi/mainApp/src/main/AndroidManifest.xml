@@ -85,7 +85,9 @@
         <activity
             android:name=".firstMenu"
             android:label="@string/title_activity_first_menu"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RecordingComplete" />
+        <activity android:name=".vietnam_info"></activity>
     </application>
 
 </manifest>

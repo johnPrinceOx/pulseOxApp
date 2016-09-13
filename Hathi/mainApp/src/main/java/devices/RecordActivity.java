@@ -26,10 +26,9 @@ import com.androidplot.xy.SimpleXYSeries;
 import com.androidplot.xy.XYPlot;
 import com.smartcare.research.library.ConnectionManager;
 
-import org.pnuemoniaproject.hathi.HospiStream2;
-import org.pnuemoniaproject.hathi.NewMeasurement;
 import org.pnuemoniaproject.hathi.R;
 import org.pnuemoniaproject.hathi.firstMenu;
+import org.pnuemoniaproject.hathi.RecordingComplete;
 
 import java.io.File;
 import java.lang.ref.WeakReference;
@@ -187,8 +186,13 @@ public class RecordActivity extends Activity {
         mHrDisplay.setText("--");
         mSpo2Display.setText("--");
 
-        initialiseSeries();
+        Intent next = new Intent(RecordActivity.this,
+                RecordingComplete.class);
+        startActivity(next);
 
+        // initialiseSeries();
+
+        /*
         mControlButton.setText("Start");
         mControlButton.setOnClickListener(new OnClickListener() {
             @Override
@@ -196,6 +200,7 @@ public class RecordActivity extends Activity {
                 connectToPulseOximeter();
             }
         });
+        */
     };
 
     /**

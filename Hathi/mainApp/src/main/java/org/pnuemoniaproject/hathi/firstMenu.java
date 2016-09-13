@@ -35,7 +35,6 @@ public class firstMenu extends AppCompatActivity {
         setSupportActionBar(toolbar);
         johnUsefulMethods.initializePatientVariables();
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         newPatient = (Button) findViewById(R.id.createNew);
         oldPatient = (Button) findViewById(R.id.lookOld);
         quickMeasure = (Button) findViewById(R.id.quick);

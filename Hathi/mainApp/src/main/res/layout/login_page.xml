@@ -41,6 +41,19 @@
             android:layout_marginRight="5dp"
             android:layout_marginTop="2dp"
             android:background="@drawable/settings_button" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/infoButton"
+            android:background="@drawable/info"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_alignBottom="@+id/lang_setting"
+            android:layout_toLeftOf="@+id/lang_setting"
+            android:layout_toStartOf="@+id/lang_setting"
+            android:focusableInTouchMode="true" />
+
     </RelativeLayout>
 
     <LinearLayout
