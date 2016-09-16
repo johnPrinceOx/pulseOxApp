@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Hand Foot and Mouth Disease in Children"
+        android:text="Hand, Foot, and Mouth Disease in Children Under 5 in Vietnamese Public Hospitals"
         android:id="@+id/textView9"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -66,14 +66,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="App created by John Prince - any bugs or feedback please contact at john.prince@eng.ox.ac.uk"
+        android:text="App developed by Arvind Raghu &amp; John Prince  - any bugs or feedback please contact at john.prince@eng.ox.ac.uk"
         android:id="@+id/textView13"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:textAlignment="center" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Back To Login"
         android:id="@+id/backToLogin"
