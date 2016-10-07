@@ -159,6 +159,7 @@ public class RecordActivity extends Activity {
                     @Override
                     public void onClick(View v) {
                         connectToPulseOximeter();
+                        //Do nothing
                     }
                 });
                 return;
