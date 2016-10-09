@@ -66,7 +66,7 @@
         <Button
             android:layout_width="200dp"
             android:layout_height="80dp"
-            android:text="Quick Measurement"
+            android:text="Send Email"
             android:id="@+id/quick"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/button_states"
